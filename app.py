@@ -39,12 +39,13 @@ movie_list = movies['title'].values
 title = st.selectbox('Choose a movie you like:', movie_list) # user's selection is stored in title
 
 if st.button('Recommend'): 
-    images, titles = get_recommendations(title)
+    with st.spinner('Please wait...'):
+        images, titles = get_recommendations(title)
 
-    idx = 0
-    for i in range(0, 2): 
-        cols = st.columns(5)
-        for col in cols: 
-            col.image(images[idx])
-            col.write(titles[idx])
-            idx += 1
+        idx = 0
+        for i in range(0, 2): 
+            cols = st.columns(5)
+            for col in cols: 
+                col.image(images[idx])
+                col.write(titles[idx])
+                idx += 1
