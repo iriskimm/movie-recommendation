@@ -24,7 +24,10 @@ def get_recommendations(title):
     for i in movie_indices: 
         id = movies['id'].iloc[i]
         details = movie.details(id)
-        images.append('https://image.tmdb.org/t/p/w500' + details['poster_path'])
+        try: 
+            images.append('https://image.tmdb.org/t/p/w500' + details['poster_path'])
+        except:
+            images.append('no_image.jpg')
         titles.append(details['title'])
 
     return images, titles
