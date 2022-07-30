@@ -6,6 +6,7 @@ import config
 movie = Movie()
 tmdb = TMDb()
 tmdb.api_key = config.api_key
+# tmdb.language = 'ko-KR' # show movie titles & images in korean
 
 movies = pickle.load(open('movies.pickle', 'rb'))
 cosine_sim = pickle.load(open('cosine_sim.pickle', 'rb'))
