@@ -130,3 +130,6 @@ dmypy.json
 
 # others
 config.py
+myenv
+cosine_sim.pickle
+movies.pickle
