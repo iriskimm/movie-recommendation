@@ -133,3 +133,4 @@ config.py
 myenv
 cosine_sim.pickle
 movies.pickle
+.gitattributes

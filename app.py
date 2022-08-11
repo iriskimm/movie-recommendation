@@ -28,7 +28,7 @@ def get_recommendations(title):
         try: 
             images.append('https://image.tmdb.org/t/p/w500' + details['poster_path'])
         except:
-            images.append('no_image.jpg')
+            images.append('resources/no_image.jpg')
         titles.append(details['title'])
 
     return images, titles
