@@ -13,4 +13,3 @@ This project was developed with the goal of learning and practicing **Machine Le
 
 ## Algorithms
 * Computed cosine similarity score based on movie genre, actors, the director, and plot keywords to compute TF-IDF vectors
-* Used Singular Value Decomposition(SVD) to arrive at a Root Mean Square Error(RMSE) of 0.90 at predicting movie ratings
