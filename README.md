@@ -1,5 +1,5 @@
 # Movie Recommendation System
-An NLP-based recommendation system. Built using Python and Scikit-learn.
+An NLP-based recommendation system. Built using Python and Scikit-learn and deployed using Streamlit. 
 
 ## Product Overview
 <img src='resources/website_overview.png' width=80%>
